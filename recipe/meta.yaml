@@ -1,5 +1,5 @@
 {% set name = "ldcpy" %}
-{% set version = "0.14.3" %}
+{% set version = "0.15.3" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 46d77dc0c444b309048c98f91820e45af1fd6bac491cf74afa6c4a187890945d
+  sha256: 5aec42f1eebd0d259a8af97dd2e40ef6f0f59c01d01b41ffd26dc3c6812a1e67
 
 build:
   number: 1
@@ -25,7 +25,6 @@ requirements:
     - cmocean
     - cython
     - dask
-    - jupyterlab
     - matplotlib-base
     - netcdf4
     - numpy
@@ -37,8 +36,8 @@ requirements:
     - xarray
     - xrft
     - cartopy
-    - nc-time-axis
     - cf_xarray
+    - ipython
 
 test:
   imports:
